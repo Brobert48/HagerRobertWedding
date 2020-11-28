@@ -196,7 +196,7 @@ p{
 /*-------------------------------------------------------*/
 #home {
   position: relative;
-  background: url(.\images\Alyssa+BlakeEngagement-0006.jpg) no-repeat center center;
+  background: url(../images/Alyssa+BlakeEngagement-0006.jpg) no-repeat center center;
   height: 100%;
   background-size: cover;
   z-index: 1;
@@ -377,7 +377,7 @@ p{
   /* Quote */
 /*-------------------------------------------------------*/
 #quote {
-  background: url(../images/bodybg.jpg) no-repeat;
+  background: url(../images/Alyssa+BlakeEngagement-0054.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
@@ -592,7 +592,7 @@ ul.da-thumbs {
   height: auto;
   padding-top: 100px;
   padding-bottom: 50px;
-  background: #f5f5f5 url(../images/bodybg.jpg) no-repeat;
+  background: #f5f5f5 url(../images/Alyssa+BlakeEngagement-0054.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }

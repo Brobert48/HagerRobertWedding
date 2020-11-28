@@ -70,7 +70,7 @@ $(function(){
 var element = $(".element");
 $(function() {
   element.typed({
-    strings: ["Some cliche saying"],
+    strings: ["September 4th, 2021"],
     typeSpeed: 100,
     loop: true,
   });
