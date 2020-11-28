@@ -43,7 +43,7 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 .contrast {
-  color: #ff6a6a;
+  color: navy;
 }
 .heading {
   padding: 60px 0px;
@@ -102,7 +102,7 @@ p{
   font-size: 10px;
 }
 .spinner > div {
-  background-color: #ff6a6a;
+  background-color: navy;
   height: 100%;
   width: 6px;
   display: inline-block;
@@ -171,13 +171,13 @@ p{
 .custom-navbar .navbar-nav > li > a:hover,
 .custom-navbar .navbar-nav > li > a:focus {
   background-color: transparent;
-  color: #ff6a6a;
+  color: navy;
 }
 .custom-navbar .navbar-nav > li > a.active {
   background-color: transparent;
-  color: #ff6a6a;
+  color: navy;
   font-weight: bold;
-  border-bottom: 2px solid #ff6a6a;
+  border-bottom: 2px solid navy;
 }
 .custom-navbar .navbar-toggle {
   border: none;
@@ -187,7 +187,7 @@ p{
   background-color: transparent;
 }
 .custom-navbar .navbar-toggle .icon-bar {
-  background: #ff6a6a;
+  background: navy;
   border-color: transparent;
 }
 
@@ -196,7 +196,7 @@ p{
 /*-------------------------------------------------------*/
 #home {
   position: relative;
-  background: url(https://media.gettyimages.com/photos/please-say-that-youll-be-my-wife-picture-id661436270?s=612x612) no-repeat center center;
+  background: url(.\images\Alyssa+BlakeEngagement-0006.jpg) no-repeat center center;
   height: 100%;
   background-size: cover;
   z-index: 1;
@@ -228,7 +228,7 @@ p{
 }
 .bouncing-icon:hover {
   background: none;
-  color: #ff6a6a;
+  color: navy;
 }
 
 /*-------------------------------------------------------*/
@@ -259,7 +259,7 @@ p{
   vertical-align: middle;
 }
 #about .social a:hover {
-  background: #ff6a6a;
+  background: navy;
   text-decoration: none;
   -webkit-transition: all 500ms linear;
   -moz-transition: all 500ms linear;
@@ -285,7 +285,7 @@ p{
   font-weight: bold;
   padding: 12px 20px;
   color: #fff;
-  background-color: #ff6a6a;
+  background-color: navy;
 }
 #about .download-btn:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
@@ -347,7 +347,7 @@ p{
 }
 .skill-bar-overlay {
   height: 8px;
-  background-color: #ff6a6a;
+  background-color: navy;
   width: 20%;
 }
 .single-skill {
@@ -397,7 +397,7 @@ p{
   font-weight: bold;
   padding: 10px 30px;
   color: #fff;
-  background-color: #ff6a6a;
+  background-color: navy;
   border-radius: 25px;
 }
 #quote .quote-btn:hover {
@@ -429,7 +429,7 @@ p{
   border-radius: 20px;
 }
 #portfolio .active {
-  background-color: #ff6a6a;
+  background-color: navy;
   color: #fff;
 }
 #portfolio .active:hover {
@@ -439,7 +439,7 @@ p{
   color: #fff !important;
 }
 #portfolio ul.work-list li:hover {
-  color: #ff6a6a;
+  color: navy;
 }
 ul.da-thumbs {
   list-style-type: none;
@@ -484,7 +484,7 @@ ul.da-thumbs {
   padding: 10px;
   margin: 0px 5px;
   color: #fff;
-  background-color: #ff6a6a;
+  background-color: navy;
   border-radius: 50%;
 }
 
@@ -508,7 +508,7 @@ ul.da-thumbs {
 .single-testimonial .t-image img {
   width: 90px;
   height: 90px;
-  border: 2px solid #ff6a6a;
+  border: 2px solid navy;
 }
 .t-name {
   position: absolute;
@@ -521,7 +521,7 @@ ul.da-thumbs {
 }
 .single-testimonial p.company {
 	font-style: italic;
-	color: #ff6a6a;
+	color: navy;
   font-size: 14px;
   text-align: left;
 }
@@ -581,7 +581,7 @@ ul.da-thumbs {
   border-radius: 30px; 
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #ff6a6a;
+  background: navy;
 }
 
 /*-------------------------------------------------------*/
@@ -640,7 +640,7 @@ ul.da-thumbs {
   padding: 9px 18px;
   border-radius: 3px;
   color: #fff;
-  background-color: #ff6a6a;
+  background-color: navy;
 }
 #blog .blog-btn:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
@@ -678,7 +678,7 @@ ul.da-thumbs {
   margin-top: 20px;
 }
 #contact .send-btn {
-  background-color: #ff6a6a;
+  background-color: navy;
   color: #fff;
   font-size: 16px;
   font-weight: bold;
@@ -734,7 +734,7 @@ ul.da-thumbs {
   z-index: 9;
 }
 #scroll-up:hover {
-  background-color: #ff6a6a;
+  background-color: navy;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   -webkit-transition: all 500ms linear;
   -moz-transition: all 500ms linear;
