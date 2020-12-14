@@ -128,11 +128,37 @@ startSkills.waypoint(function () {
 });
 
 //Magnific Popup
-$('#parent').magnificPopup({
-  delegate: 'a.gallery',
+$('.image-popup-vertical-fit').magnificPopup({
   type: 'image',
   closeOnContentClick: true,
-  gallery: {enabled: true}
+  mainClass: 'mfp-img-mobile',
+  image: {
+    verticalFit: true
+  }
+  
+});
+
+$('.image-popup-fit-width').magnificPopup({
+  type: 'image',
+  closeOnContentClick: true,
+  image: {
+    verticalFit: false
+  }
+});
+
+$('.image-popup-no-margins').magnificPopup({
+  type: 'image',
+  closeOnContentClick: true,
+  closeBtnInside: false,
+  fixedContentPos: true,
+  mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+  image: {
+    verticalFit: true
+  },
+  zoom: {
+    enabled: true,
+    duration: 300 // don't foget to change the duration also in CSS
+  }
 });
 
 //Mixitup
@@ -224,26 +250,6 @@ var validator=$("#form").validate({
 $(".send-btn").on("click touchstart", function () {
   $("#form").css("color", "#ac4b49");
 });
-
-//Google Map
-var myCenter = new google.maps.LatLng(19.074,72.884);
-function initialize() {
-  var mapProp = {
-    center:myCenter,
-    zoom:13,
-    scrollwheel:false,
-    draggable:true,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map = new google.maps.Map(document.getElementById("map"),mapProp);
-  var marker = new google.maps.Marker({
-    position:myCenter,
-    icon: 'images/map.png',
-  });
-  marker.setMap(map);
-  marker.setAnimation(google.maps.Animation.BOUNCE);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
 
 //Scroll-to-up
 $('#scroll-up').hide();
