@@ -52,7 +52,7 @@ function processItems() {
         itemsToDisplay.forEach(function (imgRef) {
             imgRef.getDownloadURL().then(function (url) {
                 console.log(imgRef);
-                var col = $('<div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 1rem;"> <img id="'+ imgRef.name +'" src="'+ url +'" alt="image" class="img-responsive"><div>').click(()=>{
+                var col = $('<div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 1rem;"> <div class="img-thumbnail"> <img id="'+ imgRef.name +'" src="'+ url +'" alt="image" class="img-responsive"></div></div>').click(()=>{
                     console.log(url);
                     openModal();
                     showSlide(url);

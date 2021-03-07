@@ -22,7 +22,7 @@
 6. Service
 7. Quote
 8. Portfolio
-9. Testimonial
+9. photos
 10. Counter
 11. Blog
 12. Contact
@@ -293,25 +293,25 @@ p{
 }
 
 /*-------------------------------------------------------*/
-  /* Services */
+  /* Venue */
 /*-------------------------------------------------------*/
-#service {
+#venue {
   background-color: #f5f5f5;
 }
-#service .back img {
+#venue .back img {
   height: 45px;
   margin: auto;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-#service .subtitle {
+#venue .subtitle {
   margin: 15px 0px 10px 0px;
 }
-#service p {
+#venue p {
   font-size: 16px;
 }
-#service .back {
+#venue .back {
   position: relative;
   background-color: #fff;
   padding: 30px 15px;
@@ -322,10 +322,10 @@ p{
 .space {
   padding-bottom: 60px;
 }
-#service .back:hover {
+#venue .back:hover {
   cursor: pointer;
 }
-#service .back:hover img {
+#venue .back:hover img {
   transform: scale(1.2);
 }
 #skill {
@@ -406,21 +406,21 @@ p{
 }
 
 /*-------------------------------------------------------*/
-  /* Portfolio */
+  /* Hotels */
 /*-------------------------------------------------------*/
-#portfolio {
+#hotel {
   padding-bottom: 60px;
   background-color: #f5f5f5;
 }
-#portfolio .mix {
+#hotel .mix {
   display: none;
 }
-#portfolio ul.work-list {
+#hotel ul.work-list {
   list-style: outside none none;
   margin-bottom: 60px;
   padding: 0;
 }
-#portfolio ul.work-list li {
+#hotel ul.work-list li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 20px;
@@ -428,17 +428,17 @@ p{
   font-weight: 500;
   border-radius: 20px;
 }
-#portfolio .active {
+#hotel .active {
   background-color: navy;
   color: #fff;
 }
-#portfolio .active:hover {
+#hotel .active:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-#portfolio ul.work-list li.active {
+#hotel ul.work-list li.active {
   color: #fff !important;
 }
-#portfolio ul.work-list li:hover {
+#hotel ul.work-list li:hover {
   color: navy;
 }
 ul.da-thumbs {
@@ -462,25 +462,25 @@ ul.da-thumbs {
   height: 100%;
   color: #fff;
 }
-#portfolio .work-table {
+#hotel .work-table {
   display: table;
   width: 100%;
   height: 100%;
 }
-#portfolio .table-cell {
+#hotel .table-cell {
   display: table-cell;
   vertical-align: middle;
 }
-#portfolio .work-content h3 {
+#hotel .work-content h3 {
   margin-top: 0;
 }
-#portfolio .work-content p {
+#hotel .work-content p {
   color: #fff;
   font-size: 15px;
   line-height: 150%;
   padding: 0px 20px;
 }
-#portfolio .work-content .fa {
+#hotel .work-content .fa {
   padding: 10px;
   margin: 0px 5px;
   color: #fff;
@@ -489,101 +489,87 @@ ul.da-thumbs {
 }
 
 /*-------------------------------------------------------*/
-  /* Testimonial */
+  /* Photos */
 /*-------------------------------------------------------*/
-#testimonial {
+#photos {
   padding-bottom: 60px;
+  background-color: #f5f5f5;
 }
-.single-testimonial {
-  position: relative;
-  padding: 15px 10px;
-  margin: 0px 10px;
-  border: 1.5px solid #bbb;
+#photos .mix {
+  display: none;
 }
-.t-image {
-  position: absolute;
-  left: 20px;
-  top: 20px;
+#photos ul.work-list {
+  list-style: outside none none;
+  margin-bottom: 60px;
+  padding: 0;
 }
-.single-testimonial .t-image img {
-  width: 90px;
-  height: 90px;
-  border: 2px solid navy;
-}
-.t-name {
-  position: absolute;
-  left: 130px;
-  top: 20px;
-}
-#testimonial .subtitle {
-  text-align: left;
-  margin-top: 15px;
-}
-.single-testimonial p.company {
-	font-style: italic;
-	color: navy;
+#photos ul.work-list li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px;
   font-size: 14px;
-  text-align: left;
+  font-weight: 500;
+  border-radius: 20px;
 }
-.t-content {
-  margin-top: 110px;
+#photos .active {
+  background-color: navy;
+  color: #fff;
 }
-.t-content p {
-  text-align: left;
+#photos .active:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+#photos ul.work-list li.active {
+  color: #fff !important;
+}
+#photos ul.work-list li:hover {
+  color: navy;
+}
+ul.da-thumbs {
+  list-style-type: none;
+  padding: 0;
+}
+.da-thumbs li {
+  overflow: hidden;
+  padding: 0;
+}
+.da-thumbs li,
+.da-thumbs li img {
+  display: block;
+  position: relative;
+}
+.da-thumbs li div.work-content {
+  position: absolute;
+  text-align: center;
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+#photos .work-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+#photos .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+#photos .work-content h3 {
+  margin-top: 0;
+}
+#photos .work-content p {
+  color: #fff;
   font-size: 15px;
   line-height: 150%;
-  padding: 0 10px;
+  padding: 0px 20px;
 }
-.owl-theme .owl-nav {
-  margin-top: 10px;
-  text-align: center;
-  -webkit-tap-highlight-color: transparent; 
+#photos .work-content .fa {
+  padding: 10px;
+  margin: 0px 5px;
+  color: #fff;
+  background-color: navy;
+  border-radius: 50%;
 }
-.owl-theme .owl-nav [class*='owl-'] {
-  color: #FFF;
-  font-size: 14px;
-  margin: 5px;
-  padding: 4px 7px;
-  background: #D6D6D6;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 3px; 
-}
-.owl-theme .owl-nav [class*='owl-']:hover {
-  background: #869791;
-  color: #FFF;
-  text-decoration: none; 
-}
-.owl-theme .owl-nav .disabled {
-  opacity: 0.5;
-  cursor: default; 
-}
-.owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 10px; 
-}
-.owl-theme .owl-dots {
-  text-align: center;
-  -webkit-tap-highlight-color: transparent; 
-}
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-  zoom: 1;
-  *display: inline; 
-}
-.owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #D6D6D6;
-  display: block;
-  -webkit-backface-visibility: visible;
-  transition: opacity 200ms ease;
-  border-radius: 30px; 
-}
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: navy;
-}
-
 /*-------------------------------------------------------*/
   /* Counter */
 /*-------------------------------------------------------*/
@@ -869,7 +855,7 @@ footer .fa-pinterest {
 }
 
 .pagination a.active {
-  background-color: tan;
+  background-color: rgb(211, 181, 141);
   color: white;
 }
 
@@ -990,4 +976,8 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-thumbnail{
+background-color:black;
 }
