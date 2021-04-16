@@ -178,55 +178,33 @@ $('.counter').counterUp({
 });
 
 //Testimonial
-$("#owl-testimonial").owlCarousel({
-  navigation: false,
-  pagination: true,
-  slideSpeed: 800,
-  paginationSpeed: 800,
-  smartSpeed: 500,
-  autoplay: false,
-  singleItem: true,
-  loop: false,
-  responsive:{
-    0:{
-      items:1
+$('#customers-testimonials').owlCarousel( {
+  loop: true,
+  center: true,
+  items: 13,
+  margin: 30,
+  autoplay: true,
+  dots:true,
+  dotsEach: true,
+  nav:false,
+  autoplayTimeout: 3000,
+  smartSpeed: 450,
+  lazyLoadEager: 3,
+  navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+  responsive: {
+    0: {
+      items: 1
     },
-    680:{
-      items:2
+    768: {
+      items: 2
     },
-    1000:{
-      items:3
+    1170: {
+      items: 3
     }
   }
 });
 
-//Clients
-$("#partners").owlCarousel({
-  loop: true,
-  nav: false,
-  dots: false,
-  margin: 30,
-  autoplay: true,
-  autoplayTimeout: 1300,
-  smartSpeed: 500,
-  responsive: {
-    0:{
-      items:1
-    },
-    320:{
-      items:2
-    },
-    520:{
-      items:3
-    },
-    860:{
-      items:5
-    },
-    1000:{
-      items:6
-    }
-  }
-});
+
 
 //Contact form
 var validator=$("#form").validate({
