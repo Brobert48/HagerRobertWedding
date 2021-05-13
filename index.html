@@ -92,6 +92,8 @@
 					<li><a href="#venue" data-toggle="collapse" data-target=".navbar-collapse.in">Venue</a></li>
 					<li><a href="#hotel" data-toggle="collapse" data-target=".navbar-collapse.in">Hotels</a></li>
 					<li><a href="#photos" data-toggle="collapse" data-target=".navbar-collapse.in">Photos</a></li>
+					<li><a href="#rsvp" data-toggle="collapse" data-target=".navbar-collapse.in">RSVP</a></li>
+
 					<!-- <li><a href="#portfolio">Portfolio</a></li> -->
 					<!-- <li><a href="#contact">Contact</a></li> -->
 				</ul>
@@ -781,267 +783,385 @@
 		<!-- ========== End Of Quote ========== -->
 
 
-		<!-- ========== Contact ========== -->
-		<div id="contact">
+		<!-- ========== RSVP ========== -->
+		<div id="rsvp" style="padding-top: 3rem;">
 			<div class="heading">
-				<h1>Contact Us</h1>
+				<h1>RSVP</h1>
 				<hr>
 			</div>
 			<div class="container">
-				<div class="row">
-					<div class="col">
-						<ul class="list-icon-items clearfix no-margins" style="list-style-type: none;">
-							<li class="grid-3 secondary alpha" style="margin: 0 20%; float: left;">
-								<a href="mailto:AlyssaRobert10.2021@gmail.com">
+				<form id="form" method="post">
+					<label for="ReponseType">New RSVP or Updating RSVP? </label>
+					<select class="form-control contact-text mb-10" name="ReponseType" id="ReponseType">
+						<option value="New">New</option>
+						<option value="Update">Update</option>
+					</select>
+					<br>
+					<select class="form-control contact-text mb-10" name="Reponse" id="Reponse">
+						<option value="New">Will be there!</option>
+						<option value="Update">Cannot make it.</option>
+					</select>
+					<br>
+					<input type="text" id="name" name="name" size="40" class="contact-text mb-10"
+						placeholder="Your Name" required>
+					<br>
+					<input type="email" id="email" name="email" size="40" class="contact-text mt-20 mb-10"
+						placeholder="Your email address" required>
+					<br>
+					<input type="text" id="phone" name="Phone" size="40" class="contact-text mt-20 mb-10"
+						placeholder="Phone">
+
+					<br>
+					<label for="message">Please List Full Name of Those Coming <br> Vegan/Vegetarian preference
+						and/or Food Allergy information for each</label>
+					<textarea id="message" name="message" cols="40" rows="10" class="contact-message mt-10 mb-10"
+						placeholder="Message" required></textarea>
+					<br>
+					<ul id="errors" class="errorMessages"></ul>
+
+					<input id="sendBtn" class="send-btn" type="button" value="Send Email" onclick="sendEmail()" />
+					<br>
+				</form>
+			</div>
+			<!-- ========== End Of Photos ========== -->
+
+			<!-- ========== Quote ========== -->
+			<div id="quote" class="text-center" data-stellar-background-ratio="0.15"></div>
+			<!-- ========== End Of Quote ========== -->
+
+			<!-- ========== Contact ========== -->
+			<div id="contact">
+				<div class="heading">
+					<h1>Contact Us</h1>
+					<hr>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<ul class="list-icon-items clearfix no-margins" style="list-style-type: none;">
+								<li class="grid-3 secondary alpha" style="margin: 0 20%; float: left;">
+									<a href="mailto:AlyssaRobert10.2021@gmail.com">
+										<i class="circ large tertiary ss-icon ss-standard">
+											✉
+											<i class="circ pulse"></i>
+										</i>
+										<h4 class="secondary">Email</h4>
+										<p>
+											<span class="pseudo-link">AlyssaRobert10.2021@gmail.com</span>
+										</p>
+									</a>
+
+								</li>
+								<li class="grid-3 secondary">
 									<i class="circ large tertiary ss-icon ss-standard">
-										✉
+										📱
 										<i class="circ pulse"></i>
 									</i>
-									<h4 class="secondary">Email</h4>
-									<p>
-										<span class="pseudo-link">AlyssaRobert10.2021@gmail.com</span>
-									</p>
-								</a>
+									<h4 class="secondary">Phone</h4>
+									<p class="secondary">Don't call me</p>
+								</li>
+							</ul>
 
-							</li>
-							<li class="grid-3 secondary">
-								<i class="circ large tertiary ss-icon ss-standard">
-									📱
-									<i class="circ pulse"></i>
-								</i>
-								<h4 class="secondary">Phone</h4>
-								<p class="secondary">Don't call me</p>
-							</li>
-						</ul>
-						<!-- <form id="form" action="php/contact.php" method="POST">              
-						<input type="text" id="name" name="name" size="40" class="contact-text mb-10" placeholder="Your Name">
-						<br>                
-						<input type="email" name="email" size="40" class="contact-text mt-20 mb-10" placeholder="Your email address">
-						<br>                
-						<input type="text" name="subject" size="40" class="contact-text mt-20 mb-10" placeholder="Subject">
-						<br>                             
-						<textarea name="message" cols="40" rows="10" class="contact-message mt-20 mb-10" placeholder="Message"></textarea>        
-						<br>
-						<input type="submit" value="SEND MESSAGE" class="send-btn mt-20">               
-					</form> -->
+
+						</div>
+						<!-- <div class="col-xs-12 col-sm-6 col-md-6"> 
+					<div id="map"></div> -->
 
 					</div>
-					<!-- <div class="col-xs-12 col-sm-6 col-md-6"> 
-					<div id="map"></div> -->
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- ========== End of Contact ========== -->
+		<!-- ========== End of Contact ========== -->
 
-	<!-- ========== Scroll to Top ========== -->
-	<div id="scroll-up">
-		<i class="fa fa-angle-up"></i>
-	</div>
-	<!-- ========== End of Scroll to Top ========== -->
+		<!-- ========== Scroll to Top ========== -->
+		<div id="scroll-up">
+			<i class="fa fa-angle-up"></i>
+		</div>
+		<!-- ========== End of Scroll to Top ========== -->
 
-	<!--=============== Footer ===============-->
-	<footer>
-		<!-- <a href="#" class="facebook-tooltip"><i class="fa fa-facebook"></i><span class="facebook-text">Facebook</span></a> -->
-		<!-- <a href="#" class="twitter-tooltip"><i class="fa fa-twitter"></i><span class="twitter-text">Twitter</span></a> -->
-		<!-- <a href="#" class="instagram-tooltip"><i class="fa fa-instagram"></i><span class="instagram-text">Instagram</span></a> -->
-		<!-- <a href="#" class="youtube-tooltip"><i class="fa fa-youtube"></i><span class="youtube-text">YouTube</span></a> -->
-		<!-- <a href="https://www.linkedin.com/in/Blake-Robert/" class="linkedin-tooltip">
+		<!--=============== Footer ===============-->
+		<footer>
+			<!-- <a href="#" class="facebook-tooltip"><i class="fa fa-facebook"></i><span class="facebook-text">Facebook</span></a> -->
+			<!-- <a href="#" class="twitter-tooltip"><i class="fa fa-twitter"></i><span class="twitter-text">Twitter</span></a> -->
+			<!-- <a href="#" class="instagram-tooltip"><i class="fa fa-instagram"></i><span class="instagram-text">Instagram</span></a> -->
+			<!-- <a href="#" class="youtube-tooltip"><i class="fa fa-youtube"></i><span class="youtube-text">YouTube</span></a> -->
+			<!-- <a href="https://www.linkedin.com/in/Blake-Robert/" class="linkedin-tooltip">
 			<i class="fa fa-linkedin"></i>
 			<span class="linkedin-text">LinkedIn</span>
 		</a> -->
-		<!-- <a href="#" class="pinterest-tooltip"><i class="fa fa-pinterest"></i><span class="pinterest-text">Pinterest</span></a>   -->
-		<!-- <p class="wow zoomIn">&copy; 2020
+			<!-- <a href="#" class="pinterest-tooltip"><i class="fa fa-pinterest"></i><span class="pinterest-text">Pinterest</span></a>   -->
+			<!-- <p class="wow zoomIn">&copy; 2020
 				<strong>CanadianBlaken</strong>. All rights reserved.
 			</p> -->
-	</footer>
-	<!--=============== End Of Footer ===============-->
+		</footer>
+		<!--=============== End Of Footer ===============-->
 
-	<!-- =================== Photo Modal ================== -->
-	<div id="myModal" class="modal" onclick="closeModal()" style="padding:4rem; background-color: black;">
-		<span class="close cursor" onclick="closeModal()">&times;</span>
-		<div class="modal-content2">
-		</div>
-	</div>
-	<!-- =================== End of Photo Modal ================== -->
-
-	<!-- =================== Bio Modal ================== -->
-	<div id="bioModal" class="modal centerVertandHori" onclick="closeBioModal()"
-		style="padding:4rem; background-color: black;  overflow: auto; ">
-		<span class="close cursor" onclick="closeBioModal()">&times;</span>
-		<div class="contianer" style="overflow: auto; ">
-
-			<div class="col-xs-12 col-sm-12 col-md-5 bioModalContainer centerVertandHori"
-				style="display: flex; height:95vh;">
-				<div class="col" style="display: flex; align-items: center; justify-content: center">
-					<div class="BioModalPhoto"></div>
-				</div>
+		<!-- =================== Photo Modal ================== -->
+		<div id="myModal" class="modal" onclick="closeModal()" style="padding:4rem; background-color: black;">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content2">
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-7 bioModalContainer centerVertandHori"
-				style="display: flex; height:95vh;">
-				<div class="col" style="display: flex; align-items: center; justify-content: center">
-					<div id="BioModalTextId" class="BioModalText p-2 "
-						style="background-color: rgba(0, 0, 0, 0.75); color: white !important;  height: fit-content;">
+		</div>
+		<!-- =================== End of Photo Modal ================== -->
+
+		<!-- =================== Bio Modal ================== -->
+		<div id="bioModal" class="modal centerVertandHori" onclick="closeBioModal()"
+			style="padding:4rem; background-color: black;  overflow: auto; ">
+			<span class="close cursor" onclick="closeBioModal()">&times;</span>
+			<div class="contianer" style="overflow: auto; ">
+
+				<div class="col-xs-12 col-sm-12 col-md-5 bioModalContainer centerVertandHori"
+					style="display: flex; height:95vh;">
+					<div class="col" style="display: flex; align-items: center; justify-content: center">
+						<div class="BioModalPhoto"></div>
 					</div>
 				</div>
+				<div class="col-xs-12 col-sm-12 col-md-7 bioModalContainer centerVertandHori"
+					style="display: flex; height:95vh;">
+					<div class="col" style="display: flex; align-items: center; justify-content: center">
+						<div id="BioModalTextId" class="BioModalText p-2 "
+							style="background-color: rgba(0, 0, 0, 0.75); color: white !important;  height: fit-content;">
+						</div>
+					</div>
+				</div>
+
+
+
+
 			</div>
 
-
-
-
 		</div>
+		<!-- =================== End of Bio Modal ================== -->
 
-	</div>
-	<!-- =================== End of Bio Modal ================== -->
+		<script>
 
-	<script>
-
-		var Names = [
-			"<h2>Andre Curry</h2>",
-			"<h2>Dara English</h2>",
-			"<h2>Keri Mcleod</h2>",
-			"<h2>Kate Mauney</h2>",
-			"<h2>Kiya Montgomery</h2>",
-			"<h2>Suzy Cedrone</h2>",
-			"<h2>Scott Robert</h2>",
-			"<h2>Justin Robert</h2>",
-			"<h2>Thomas Mcleod</h2>",
-			"<h2>Zack Milner</h2>",
-			"<h2>Luke Seward</h2>",
-			"<h2>Brandon Hager</h2>",
-			"<h2>Blakely & Allie Hager</h2>"
-		]
-		var Bios = [
-			"<p>How do I know Alyssa? Well, from the day that I met her it was love at first sight ( as I was there shortly after she was born!) That was the day I learned that I would love that little baby MY ENTIRE LIFE! </p> <p> I am ever so thankful that God brought her into my life. She is my SISTER! Not by blood but of the HEART. If I could pick ANYONE in the world to be my sister I would choose Alyssa EVERYTIME. </p> <p> Watching her grow into the young lady she is now has been one of my greatest joys in life. I can remember babysitting when she was little and I was in college. If she was fussy you could put on Disney’s Aladdin ( the one with Robin Williams) and she would watch for HOURS without a peep. She would start to fuss again when the movie was OVER. (I thanked the good Lord for the rewind button many times!) Playing for hours with a sticker book because she was hot. Picture if you would, Alyssa in diapers and me in shorts and t Shirt. “One for you, One for me!” We BOTH were covered in stickers from head to toe! </p> <p> Watching her grow and holding my breath when she fell looking back makes me smile. Knowing those falls were lessons and the tears I would dry. </p> <p> We have grown up together in so many ways. I was in my 20’s when Alyssa graced my life. I don’t know if I would be the person I am with out her. She taught me how to Love Unconditionally. LORD KNOWS she taught me patience. </p> <p> Blake, You are getting the love of my life and a peace of my heart. She is stubborn, hard headed, smart, kind and caring. All these things and MORE are what make me love her SO MUCH. Welcome to this CRAZY thing that I call my family. We might not be BLOOD but Family is Family and I am LUCKY to have you both. </p> <p> I love you! Sissy! </p>"
-			, "<p>I didn't do my homework, so I'm a Potato</p>"
-			, "<p>Bonjour! Je m’appelle Keri-Ann, but my friends call me Keri.</p><p> I have known Blake his whole life. I’m his big sister and the mom of his two nephews, Hudson (7) and Owen (6). I wouldn’t argue if you called me a protective sister. I always took care of my sweet brother, even before I became a Registered Nurse. Don’t worry though, he’s repaying his debts now with all the technology help I need.</p><p> I have many memories with Blake, but I wouldn’t want to bore you with stories like <span style='color:black; user-select:none'>the time he dressed up in my clothes and yes, bathing suits too</span>. Basically, our younger years in Canada were filled with fun shenanigans and mischief together. As we got older, it was mostly me telling Blake “No, that’s not a good idea”.... until he introduced Alyssa. If my 35 year old memory serves me correctly, I knew from the beginning they were a great match and that it would lead to me writing how much I love Alyssa for a wedding website from my Asheville home.</p><p> It’s no surprise, of course, that Blake would find a forever best friend with a Pisces just like his big sister. She fit right into the Robert bunch, just like my husband Thomas did 18 years ago. As though she has always been family!</p> <p>#RobertAtLast</p>"
-			, "<p>I met Alyssa at 131 Main. She trained me and we instantly became friends. Alyssa introduced me to Blake and Scott at a party at their house. After that we all got together all the time and became a little crew. We have countless memories of good times whether at brunches, late nights, or even work memories. I absolutely adore Blake and Alyssa's beautiful relationship. </p>"
-			, "<p>Detroit native & anime addict.... Kiya met Alyssa in 2015 at massage therapy school. Almost suddeny, sparks flew and Alyssa fell in love with Kiya's lovable charm and wit! As many would say, Alyssa was the peanut butter to Kiya's jam. Since 2015 and many massages & essay papers later, Alyssa is one of Kiya's closet and dearest friends.</p> <p>From our road trip to Miami/Ockechobee to the fun nights partying, to our quiet nights just chilling, it's been a journey for the books!</p>"
-			, "<p>Hi I'm Suzy!</p> <p>Alyssa and I have been bestfriends for about 8-9 years.  It was pretty much decided by fate that we would become bestfriends because from day 1 we were roommates & working together.  That was definitely one of my favorite past times because we spent a lot of time together working out, going out, and eating at Brixx after work (lol)!  Alyssa and I have always made it a point to keep up with each other, whether I'm in Miami or she is in Asheville.  Our friendship is definitely one of those that lasts for life, I often refer to her as one of my sisters!  I am so incredibly proud and happy for her and Blake to be taking this next step and I can't wait to see where life takes them next! Cheers!</p>"
-			, "<p>My name is Scott Robert. I’ve been Blake’s younger brother for pretty much my whole life. We’ve also been best buds. We’ve been through a lot together. Hockey games, fights at school (one may have been against each other), and everything else that comes with growing up 18 months apart. With that being said, I like Alyssa more than Blake. She’s been a great addition to our family. They’re a fantastic couple and I couldn’t be happier for them! Find me at the reception if you want to hear some hilarious stories about Blake! I should be near the bar.</p>"
-			, "<p>Youngest brother of the groom. Alyssa will make a great addition to the family. She has a great personality and they definitely bring the best out of each other. It has been fun watching them grow together as individuals and as a couple! Having lived with them for about a year, I can tell there will never be a dull moment in their household and it will always be filled with joy and happiness. I can’t wait for all the exciting adventures that life will bring their way. Congratulations! </p>"
-			, "<p class='smallBioFont'>Chatting with a #RobertAtLast guest…</p> <p class='smallBioFont'>[Guest]: Sooo, how long have you known Blake?</p> <p class='smallBioFont'>[Thomas McLeod]: Uh, since 2004, when he was just a wee ginger lad.</p> <p class='smallBioFont'>[Guest]: Ok, so long time then. How did you get to know him?</p> <p class='smallBioFont'>[Thomas McLeod]: I hooked up with his sister Keri.</p> <p class='smallBioFont'>[Guest]:Oh, geez, how’d that work out getting to know him?</p> <p class='smallBioFont'>[Thomas McLeod]: It was 18 years ago, Blake wasn’t the strapping ginger lumberjack he’s grown to be, so he didn’t have much of a choice.</p> <p class='smallBioFont'>[Guest]: Think it’d be different if it happened today?  What if he truly disliked you all these years?</p> <p class='smallBioFont'>[Thomas McLeod]:  Mmm fair point, but I’m here today though, right?  Over the years he’s become a brother to me.  We’ve worked together in a couple of different companies, vacationed together, lived near each other.  I’ve seen him through a few relationships too [cough, cough, ugh].  The stories could fill a volume of many (leather-bound) books.<p class='smallBioFont'> <p class='smallBioFont'>[Guest]: Mmhmm, so you’ve got lots of good stories to tell?</p> <p class='smallBioFont'>[Thomas McLeod]: Ohhh yeah, indeed… I’ll be dishing them out as the night wears on for sure once everyone’s loosened up a bit more.  Too early for tea right now.</p> <p class='smallBioFont'>[Thomas McLeod]: (whispering) But you know, when he was training for the Marines, he won the award for eating the most <span style='color:black; user-select:none'>limp biscuits</span> in his poolee group!</p> <p class='smallBioFont'>[Guest]: Uhmm… ???</p> <p class='smallBioFont'>[Thomas McLeod]: Yeah, yeah… crazy, right?!?</p> <p class='smallBioFont'>[Guest] … (visibly confused)</p> <p class='smallBioFont'>[Thomas McLeod] … (Smiling ferociously, nodding)</p> <p class='smallBioFont'>[Guest]: Umm… you’ve known Blake since before he and Alyssa were together, how’s all that turned out in your opinion?</p> <p class='smallBioFont'>[Thomas McLeod]: I mean, great!  She’s super cool, fun, and motivated. They’re an awesome Uncle/Aunt pair with our kiddos.  They balance each other really well as partners.  Blake has gotten settled-in with life, career, priorities and all that stuff.</p> <p class='smallBioFont'>Hmmm, Blake’s all well settled-in with life… and priorities… and decision-making… I guess it’s been awhile since he’s made a really good story… maybe he cut out biscuits altogether, idk???  So, there’re downsides too.  I guess it do be like that sometimes.</p> <p class='smallBioFont'>[Guest]: Yes, it really do be like that…</p> <p class='smallBioFont'>[Thomas McLeod]: Yeah, bet! Anyways, happy to have you here, hope you enjoy the night! We’ll see ya around for my bad jokes, lies, and other stories.  If things go well, I’ll hook up with Blake’s sister tonight.</p> <p class='smallBioFont'>[Guest]: Noice…</p> <p class='smallBioFont'>[Thomas McLeod]: Noice.</p> "
-			, "<p>I was afraid that if I shared how Blake & I actually met and first hung out it would look like a censored letter from the war by the time Alyssa got done editing, so instead I will simply say that Blake & I met through Scott. We didn’t become friends until we found our shared high school love of photography... and getting kicked out of that class. But like the flames of an illegal bonfire on The Hill, our friendship burned on. 15 years later we’re still going strong.</p>"
-			, "<p>I didn't do my homework, so I'm a Potato</p>"
-			, "<p>I didn't do my homework, so I'm a Potato</p>"
-			, "<p>Our names our Blakely and Allie. We are 19 and 15 years old and are so excited to be in Alyssa and Blake’s Wedding. How we know Alyssa is she is our cousin. We have been close with her throughout our whole life and love her dearly. As you can see we all look a little bit alike. We are excited to welcome Blake to our family this September.</p>"
-		]
-		function openModal() {
-			document.getElementById("myModal").style.display = "flex";
-			document.getElementById("nav").style.display = "none";
-			document.getElementById("scroll-up").style.display = "none";
-			$('body').css('overflow', 'hidden');
-			$('body').css('position', 'fixed');
-			$('body').css('height', '100vh');
-			$('body').css('width', '100vw');
+			var Names = [
+				"<h2>Andre Curry</h2>",
+				"<h2>Dara English</h2>",
+				"<h2>Keri Mcleod</h2>",
+				"<h2>Kate Mauney</h2>",
+				"<h2>Kiya Montgomery</h2>",
+				"<h2>Suzy Cedrone</h2>",
+				"<h2>Scott Robert</h2>",
+				"<h2>Justin Robert</h2>",
+				"<h2>Thomas Mcleod</h2>",
+				"<h2>Zack Milner</h2>",
+				"<h2>Luke Seward</h2>",
+				"<h2>Brandon Hager</h2>",
+				"<h2>Blakely & Allie Hager</h2>"
+			]
+			var Bios = [
+				"<p>How do I know Alyssa? Well, from the day that I met her it was love at first sight ( as I was there shortly after she was born!) That was the day I learned that I would love that little baby MY ENTIRE LIFE! </p> <p> I am ever so thankful that God brought her into my life. She is my SISTER! Not by blood but of the HEART. If I could pick ANYONE in the world to be my sister I would choose Alyssa EVERYTIME. </p> <p> Watching her grow into the young lady she is now has been one of my greatest joys in life. I can remember babysitting when she was little and I was in college. If she was fussy you could put on Disney’s Aladdin ( the one with Robin Williams) and she would watch for HOURS without a peep. She would start to fuss again when the movie was OVER. (I thanked the good Lord for the rewind button many times!) Playing for hours with a sticker book because she was hot. Picture if you would, Alyssa in diapers and me in shorts and t Shirt. “One for you, One for me!” We BOTH were covered in stickers from head to toe! </p> <p> Watching her grow and holding my breath when she fell looking back makes me smile. Knowing those falls were lessons and the tears I would dry. </p> <p> We have grown up together in so many ways. I was in my 20’s when Alyssa graced my life. I don’t know if I would be the person I am with out her. She taught me how to Love Unconditionally. LORD KNOWS she taught me patience. </p> <p> Blake, You are getting the love of my life and a peace of my heart. She is stubborn, hard headed, smart, kind and caring. All these things and MORE are what make me love her SO MUCH. Welcome to this CRAZY thing that I call my family. We might not be BLOOD but Family is Family and I am LUCKY to have you both. </p> <p> I love you! Sissy! </p>"
+				, "<p>I didn't do my homework, so I'm a Potato</p>"
+				, "<p>Bonjour! Je m’appelle Keri-Ann, but my friends call me Keri.</p><p> I have known Blake his whole life. I’m his big sister and the mom of his two nephews, Hudson (7) and Owen (6). I wouldn’t argue if you called me a protective sister. I always took care of my sweet brother, even before I became a Registered Nurse. Don’t worry though, he’s repaying his debts now with all the technology help I need.</p><p> I have many memories with Blake, but I wouldn’t want to bore you with stories like <span style='color:black; user-select:none'>the time he dressed up in my clothes and yes, bathing suits too</span>. Basically, our younger years in Canada were filled with fun shenanigans and mischief together. As we got older, it was mostly me telling Blake “No, that’s not a good idea”.... until he introduced Alyssa. If my 35 year old memory serves me correctly, I knew from the beginning they were a great match and that it would lead to me writing how much I love Alyssa for a wedding website from my Asheville home.</p><p> It’s no surprise, of course, that Blake would find a forever best friend with a Pisces just like his big sister. She fit right into the Robert bunch, just like my husband Thomas did 18 years ago. As though she has always been family!</p> <p>#RobertAtLast</p>"
+				, "<p>I met Alyssa at 131 Main. She trained me and we instantly became friends. Alyssa introduced me to Blake and Scott at a party at their house. After that we all got together all the time and became a little crew. We have countless memories of good times whether at brunches, late nights, or even work memories. I absolutely adore Blake and Alyssa's beautiful relationship. </p>"
+				, "<p>Detroit native & anime addict.... Kiya met Alyssa in 2015 at massage therapy school. Almost suddeny, sparks flew and Alyssa fell in love with Kiya's lovable charm and wit! As many would say, Alyssa was the peanut butter to Kiya's jam. Since 2015 and many massages & essay papers later, Alyssa is one of Kiya's closet and dearest friends.</p> <p>From our road trip to Miami/Ockechobee to the fun nights partying, to our quiet nights just chilling, it's been a journey for the books!</p>"
+				, "<p>Hi I'm Suzy!</p> <p>Alyssa and I have been bestfriends for about 8-9 years.  It was pretty much decided by fate that we would become bestfriends because from day 1 we were roommates & working together.  That was definitely one of my favorite past times because we spent a lot of time together working out, going out, and eating at Brixx after work (lol)!  Alyssa and I have always made it a point to keep up with each other, whether I'm in Miami or she is in Asheville.  Our friendship is definitely one of those that lasts for life, I often refer to her as one of my sisters!  I am so incredibly proud and happy for her and Blake to be taking this next step and I can't wait to see where life takes them next! Cheers!</p>"
+				, "<p>My name is Scott Robert. I’ve been Blake’s younger brother for pretty much my whole life. We’ve also been best buds. We’ve been through a lot together. Hockey games, fights at school (one may have been against each other), and everything else that comes with growing up 18 months apart. With that being said, I like Alyssa more than Blake. She’s been a great addition to our family. They’re a fantastic couple and I couldn’t be happier for them! Find me at the reception if you want to hear some hilarious stories about Blake! I should be near the bar.</p>"
+				, "<p>Youngest brother of the groom. Alyssa will make a great addition to the family. She has a great personality and they definitely bring the best out of each other. It has been fun watching them grow together as individuals and as a couple! Having lived with them for about a year, I can tell there will never be a dull moment in their household and it will always be filled with joy and happiness. I can’t wait for all the exciting adventures that life will bring their way. Congratulations! </p>"
+				, "<p class='smallBioFont'>Chatting with a #RobertAtLast guest…</p> <p class='smallBioFont'>[Guest]: Sooo, how long have you known Blake?</p> <p class='smallBioFont'>[Thomas McLeod]: Uh, since 2004, when he was just a wee ginger lad.</p> <p class='smallBioFont'>[Guest]: Ok, so long time then. How did you get to know him?</p> <p class='smallBioFont'>[Thomas McLeod]: I hooked up with his sister Keri.</p> <p class='smallBioFont'>[Guest]:Oh, geez, how’d that work out getting to know him?</p> <p class='smallBioFont'>[Thomas McLeod]: It was 18 years ago, Blake wasn’t the strapping ginger lumberjack he’s grown to be, so he didn’t have much of a choice.</p> <p class='smallBioFont'>[Guest]: Think it’d be different if it happened today?  What if he truly disliked you all these years?</p> <p class='smallBioFont'>[Thomas McLeod]:  Mmm fair point, but I’m here today though, right?  Over the years he’s become a brother to me.  We’ve worked together in a couple of different companies, vacationed together, lived near each other.  I’ve seen him through a few relationships too [cough, cough, ugh].  The stories could fill a volume of many (leather-bound) books.<p class='smallBioFont'> <p class='smallBioFont'>[Guest]: Mmhmm, so you’ve got lots of good stories to tell?</p> <p class='smallBioFont'>[Thomas McLeod]: Ohhh yeah, indeed… I’ll be dishing them out as the night wears on for sure once everyone’s loosened up a bit more.  Too early for tea right now.</p> <p class='smallBioFont'>[Thomas McLeod]: (whispering) But you know, when he was training for the Marines, he won the award for eating the most <span style='color:black; user-select:none'>limp biscuits</span> in his poolee group!</p> <p class='smallBioFont'>[Guest]: Uhmm… ???</p> <p class='smallBioFont'>[Thomas McLeod]: Yeah, yeah… crazy, right?!?</p> <p class='smallBioFont'>[Guest] … (visibly confused)</p> <p class='smallBioFont'>[Thomas McLeod] … (Smiling ferociously, nodding)</p> <p class='smallBioFont'>[Guest]: Umm… you’ve known Blake since before he and Alyssa were together, how’s all that turned out in your opinion?</p> <p class='smallBioFont'>[Thomas McLeod]: I mean, great!  She’s super cool, fun, and motivated. They’re an awesome Uncle/Aunt pair with our kiddos.  They balance each other really well as partners.  Blake has gotten settled-in with life, career, priorities and all that stuff.</p> <p class='smallBioFont'>Hmmm, Blake’s all well settled-in with life… and priorities… and decision-making… I guess it’s been awhile since he’s made a really good story… maybe he cut out biscuits altogether, idk???  So, there’re downsides too.  I guess it do be like that sometimes.</p> <p class='smallBioFont'>[Guest]: Yes, it really do be like that…</p> <p class='smallBioFont'>[Thomas McLeod]: Yeah, bet! Anyways, happy to have you here, hope you enjoy the night! We’ll see ya around for my bad jokes, lies, and other stories.  If things go well, I’ll hook up with Blake’s sister tonight.</p> <p class='smallBioFont'>[Guest]: Noice…</p> <p class='smallBioFont'>[Thomas McLeod]: Noice.</p> "
+				, "<p>I was afraid that if I shared how Blake & I actually met and first hung out it would look like a censored letter from the war by the time Alyssa got done editing, so instead I will simply say that Blake & I met through Scott. We didn’t become friends until we found our shared high school love of photography... and getting kicked out of that class. But like the flames of an illegal bonfire on The Hill, our friendship burned on. 15 years later we’re still going strong.</p>"
+				, "<p>I didn't do my homework, so I'm a Potato</p>"
+				, "<p>I didn't do my homework, so I'm a Potato</p>"
+				, "<p>Our names our Blakely and Allie. We are 19 and 15 years old and are so excited to be in Alyssa and Blake’s Wedding. How we know Alyssa is she is our cousin. We have been close with her throughout our whole life and love her dearly. As you can see we all look a little bit alike. We are excited to welcome Blake to our family this September.</p>"
+			]
+			function openModal() {
+				document.getElementById("myModal").style.display = "flex";
+				document.getElementById("nav").style.display = "none";
+				document.getElementById("scroll-up").style.display = "none";
+				$('body').css('overflow', 'hidden');
+				$('body').css('position', 'fixed');
+				$('body').css('height', '100vh');
+				$('body').css('width', '100vw');
 
 
-		}
-
-		function closeModal() {
-			document.getElementById("myModal").style.display = "none";
-			document.getElementById("nav").style.display = "unset";
-			document.getElementById("scroll-up").style.display = "block";
-			$('body').css('overflow', 'auto');
-			$('body').css('height', 'unset');
-			$('body').css('position', 'unset');
-			$('body').css('width', 'unset');
-
-			document.getElementById('photos').scrollIntoView(true);
-		}
-
-		function showSlide(url) {
-			$('.modal-content2').empty();
-			var a = $('<img class="img-responsive" src="' + url + '">').appendTo('.modal-content2');
-		}
-
-		function openBioModal(id, url) {
-			document.getElementById("bioModal").style.display = "flex";
-			document.getElementById("nav").style.display = "none";
-			document.getElementById("scroll-up").style.display = "none";
-			$('body').css('overflow', 'hidden');
-			$('body').css('position', 'fixed');
-			$('body').css('height', '100vh');
-			$('body').css('width', '100vw');
-
-			$('.BioModalPhoto').empty();
-			$('.BioModalText').empty();
-			var a = $('<img style="max-height: 80vh;" class="img-responsive" src="' + url + '">').appendTo('.BioModalPhoto');
-			var b = $(Names[id - 1]).appendTo('.BioModalText');
-			var c = $(Bios[id - 1]).appendTo('.BioModalText');
-			if (document.getElementById(`BioModalTextId`).offsetHeight < 400 && !window.matchMedia("(max-width: 991px)").matches) {
-				document.getElementById(`BioModalTextId`).classList.add("shortBio")
-				console.log("inside if")
 			}
 
-		}
+			function closeModal() {
+				document.getElementById("myModal").style.display = "none";
+				document.getElementById("nav").style.display = "unset";
+				document.getElementById("scroll-up").style.display = "block";
+				$('body').css('overflow', 'auto');
+				$('body').css('height', 'unset');
+				$('body').css('position', 'unset');
+				$('body').css('width', 'unset');
 
-		function closeBioModal() {
-			document.getElementById("bioModal").style.display = "none";
-			document.getElementById("nav").style.display = "unset";
-			document.getElementById("scroll-up").style.display = "block";
-			$('body').css('overflow', 'auto');
-			$('body').css('height', 'unset');
-			$('body').css('width', 'unset');
-			$('body').css('position', 'unset');
-			document.getElementById("BioModalTextId").style.fontSize = "unset";
-			document.getElementById('weddingParty').scrollIntoView(true);
-			$('.BioModalPhoto').empty();
-			$('.BioModalText').empty();
-		}
-	</script>
+				document.getElementById('photos').scrollIntoView(true);
+			}
+
+			function showSlide(url) {
+				$('.modal-content2').empty();
+				var a = $('<img class="img-responsive" src="' + url + '">').appendTo('.modal-content2');
+			}
+
+			function openBioModal(id, url) {
+				document.getElementById("bioModal").style.display = "flex";
+				document.getElementById("nav").style.display = "none";
+				document.getElementById("scroll-up").style.display = "none";
+				$('body').css('overflow', 'hidden');
+				$('body').css('position', 'fixed');
+				$('body').css('height', '100vh');
+				$('body').css('width', '100vw');
+
+				$('.BioModalPhoto').empty();
+				$('.BioModalText').empty();
+				var a = $('<img style="max-height: 80vh;" class="img-responsive" src="' + url + '">').appendTo('.BioModalPhoto');
+				var b = $(Names[id - 1]).appendTo('.BioModalText');
+				var c = $(Bios[id - 1]).appendTo('.BioModalText');
+				if (document.getElementById(`BioModalTextId`).offsetHeight < 400 && !window.matchMedia("(max-width: 991px)").matches) {
+					document.getElementById(`BioModalTextId`).classList.add("shortBio")
+					console.log("inside if")
+				}
+
+			}
+
+			function closeBioModal() {
+				document.getElementById("bioModal").style.display = "none";
+				document.getElementById("nav").style.display = "unset";
+				document.getElementById("scroll-up").style.display = "block";
+				$('body').css('overflow', 'auto');
+				$('body').css('height', 'unset');
+				$('body').css('width', 'unset');
+				$('body').css('position', 'unset');
+				document.getElementById("BioModalTextId").style.fontSize = "unset";
+				document.getElementById('weddingParty').scrollIntoView(true);
+				$('.BioModalPhoto').empty();
+				$('.BioModalText').empty();
+			}
+
+			function
+				sendEmail() {
+				document.getElementById("sendBtn").value = "Validating..."
+				var errorUl = document.getElementById("errors");
+				errorUl.innerHTML = "";
+				errorUl.style.display = "none";
+				var valid = true;
+
+				var a = document.getElementById("ReponseType");
+				var responseType = a.options[a.selectedIndex].text;
+				var b = document.getElementById("Reponse");
+				var response = b.options[b.selectedIndex].text;
+
+				var name = document.getElementById("name").value;
+				if (name.length == 0) {
+					errorUl.style.display = "block";
+					let liLast = document.createElement('li');
+					liLast.innerHTML = '<li><span>Name:</span> Please enter your name.</li>';
+					errorUl.append(liLast);
+					valid = false;
+				}
+				var email = document.getElementById("email").value;
+				if (email.length == 0) {
+					errorUl.style.display = "block";
+					let liLast = document.createElement('li');
+					liLast.innerHTML = '<li><span>Email:</span> Please enter an email address.</li>';
+					errorUl.append(liLast);
+					valid = false;
+				}
+				var phone = document.getElementById("phone").value;
+				if (phone.length == 0) {
+					errorUl.style.display = "block";
+					let liLast = document.createElement('li');
+					liLast.innerHTML = '<li><span>Phone:</span> Please enter a phone number.</li>';
+					errorUl.append(liLast);
+					valid = false;
+				}
+				var messageBody = document.getElementById("message").value;
+				if (messageBody.length == 0) {
+					errorUl.style.display = "block";
+					let liLast = document.createElement('li');
+					liLast.innerHTML = '<li><span>Message:</span> Please enter your RSVP information.</li>';
+					errorUl.append(liLast);
+					valid = false;
+				}
+
+				if (valid) {
+					document.getElementById("sendBtn").value = "SENDING..."
+					var subject = `${name} sent a RSVP message`;
+					var body = `Primary responder: ${name} ` + '\r\n' + `
+						Response: ${response} ` + '\r\n' + `
+						Type: ${responseType} ` + '\r\n' + `
+						Email: ${email} ` + '\r\n' + `
+						phone: ${phone} ` + '\r\n' + `
+						MessageBody: `+ '\r\n' + `
+						${messageBody}`
 
 
-	<!-- jQuery -->
-	<script src="vendor/jquery/jquery-2.1.4.min.js"></script>
-	<!-- Stellar js -->
-	<script src="vendor/stellar/jquery.stellar.min.js"></script>
-	<!-- Typed js -->
-	<script src="vendor/typed/typed.js"></script>
-	<!-- plugin js -->
-	<script src="vendor/plugin/plugin.js"></script>
-	<!-- Mixitup -->
-	<script src="vendor/mixitup/mixitup.min.js"></script>
-	<!-- Hoverdir -->
-	<script src="vendor/hoverdir/hoverdir.js"></script>
-	<!-- Modernizr -->
-	<script src="vendor/modernizr/modernizr.js"></script>
-	<!-- Waypoint -->
-	<script src="vendor/waypoint/waypoint-2.0.3.min.js"></script>
-	<!-- Counterup -->
-	<script src="vendor/counter/counterup.min.js"></script>
-	<!-- Form Validation -->
-	<script src="vendor/validate/validate.js"></script>
-	<!-- WOW -->
-	<script src="vendor/animate/wow.min.js"></script>
-	<!-- Main js -->
-	<script src="js/main.js"></script>
-	<!-- OWL Carousel -->
-	<script src="vendor\owl-carousel\owl.carousel.min.js"></script>
+					Email.send({
+						SecureToken: "32a3d71b-56fe-41f8-bbfe-4707f0390f9d",
+						To: 'hrweddingRSVPs@gmail.com',
+						From: "hrweddingrsvpserver@gmail.com",
+						Subject: subject,
+						Body: body
+					}).then(
+						message => {
+							if (message.toLowerCase() == "ok") {
+								document.getElementById("sendBtn").value = "SENT - Thank You!"
+							} else {
+								document.getElementById("sendBtn").value = "ERROR - Try Again"
+								alert("Error sending RSVP. Try again \n If error persists, please let Blake know")
+							}
+						}
+
+					);
+				}else{
+					document.getElementById("sendBtn").value = "Not Sent - Try Again"
+				}
+			}
+		</script>
 
 
-	<!-- Firebase -->
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+		<!-- jQuery -->
+		<script src="vendor/jquery/jquery-2.1.4.min.js"></script>
+		<!-- Stellar js -->
+		<script src="vendor/stellar/jquery.stellar.min.js"></script>
+		<!-- Typed js -->
+		<script src="vendor/typed/typed.js"></script>
+		<!-- plugin js -->
+		<script src="vendor/plugin/plugin.js"></script>
+		<!-- Mixitup -->
+		<script src="vendor/mixitup/mixitup.min.js"></script>
+		<!-- Hoverdir -->
+		<script src="vendor/hoverdir/hoverdir.js"></script>
+		<!-- Modernizr -->
+		<script src="vendor/modernizr/modernizr.js"></script>
+		<!-- Waypoint -->
+		<script src="vendor/waypoint/waypoint-2.0.3.min.js"></script>
+		<!-- Counterup -->
+		<script src="vendor/counter/counterup.min.js"></script>
+		<!-- Form Validation -->
+		<script src="vendor/validate/validate.js"></script>
+		<!-- WOW -->
+		<script src="vendor/animate/wow.min.js"></script>
+		<!-- Main js -->
+		<script src="js/main.js"></script>
+		<!-- OWL Carousel -->
+		<script src="vendor\owl-carousel\owl.carousel.min.js"></script>
+		<!-- SMPTJS -->
+		<script src="https://smtpjs.com/v3/smtp.js">
+		</script>
+		<!-- Firebase -->
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
 
-	<!-- TODO: Add SDKs for Firebase products that you want to use
+		<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-	<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
-	<script>
-		// Your web app's Firebase configuration
-		var firebaseConfig = {
-			apiKey: "AIzaSyALaDSI_hGCUJKrGA4lm-6yEvuRLIewDGs",
-			authDomain: "wedding-52034.firebaseapp.com",
-			databaseURL: "https://wedding-52034-default-rtdb.firebaseio.com",
-			projectId: "wedding-52034",
-			storageBucket: "wedding-52034.appspot.com",
-			messagingSenderId: "1028473339156",
-			appId: "1:1028473339156:web:0052fa853ae51b0df25601"
-		};
-		// Initialize Firebase
-		firebase.initializeApp(firebaseConfig);
-	</script>
-	<script src="js/photoStorage.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: "AIzaSyALaDSI_hGCUJKrGA4lm-6yEvuRLIewDGs",
+				authDomain: "wedding-52034.firebaseapp.com",
+				databaseURL: "https://wedding-52034-default-rtdb.firebaseio.com",
+				projectId: "wedding-52034",
+				storageBucket: "wedding-52034.appspot.com",
+				messagingSenderId: "1028473339156",
+				appId: "1:1028473339156:web:0052fa853ae51b0df25601"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+		</script>
+		<script src="js/photoStorage.js"></script>
 
 </body>
 <!-- ========== End of Body ========== -->

@@ -205,30 +205,6 @@ $('#customers-testimonials').owlCarousel( {
 });
 
 
-
-//Contact form
-var validator=$("#form").validate({
-  rules: {
-    name: "required",
-    email: {
-      required: true,
-      email: true
-    },
-    subject: "required",
-    message: "required",
-  },
-
-  messages: {
-    name: "Please enter your name",
-    email: "Please enter a valid email address",
-    subject: "Please enter a subject",
-    message: "Please enter your message"
-  }
-});
-$(".send-btn").on("click touchstart", function () {
-  $("#form").css("color", "#ac4b49");
-});
-
 //Scroll-to-up
 $('#scroll-up').hide();
 $window.on("scroll", function () {
