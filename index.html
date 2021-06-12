@@ -1098,6 +1098,7 @@
 							if (message.toLowerCase() == "ok") {
 								document.getElementById("sendBtn").value = "SENT - Thank You!"
 							} else {
+								console.log(message);
 								document.getElementById("sendBtn").value = "ERROR - Try Again"
 								alert("Error sending RSVP. Try again \n If error persists, please let Blake know")
 							}
