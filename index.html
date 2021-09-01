@@ -90,9 +90,11 @@
 							Party</a>
 					</li>
 					<li><a href="#venue" data-toggle="collapse" data-target=".navbar-collapse.in">Venue</a></li>
-					<li><a href="#hotel" data-toggle="collapse" data-target=".navbar-collapse.in">Hotels</a></li>
-					<li><a href="#photos" data-toggle="collapse" data-target=".navbar-collapse.in">Photos</a></li>
-					<li><a href="#rsvp" data-toggle="collapse" data-target=".navbar-collapse.in">RSVP</a></li>
+					<!-- <li><a href="#hotel" data-toggle="collapse" data-target=".navbar-collapse.in">Hotels</a></li> -->
+					<!-- <li><a href="#photos" data-toggle="collapse" data-target=".navbar-collapse.in">Photos</a></li> -->
+					<li><a href="#photosw" data-toggle="collapse" data-target=".navbar-collapse.in">Wedding Day
+							Photos</a></li>
+					<!-- <li><a href="#rsvp" data-toggle="collapse" data-target=".navbar-collapse.in">RSVP</a></li> -->
 
 					<!-- <li><a href="#portfolio">Portfolio</a></li> -->
 					<!-- <li><a href="#contact">Contact</a></li> -->
@@ -145,19 +147,28 @@
 					<!-- </div> -->
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 about_bg">
-					<h1 class="text-center">Hager Robert Wedding</h1>
 					<!-- Edit Name  -->
 					<!-- <h3 class="text-center">Web Developer/Designer</h3> -->
 					<!-- Edit Heading -->
-					<p>When: Saturday September 4th, 2021 at 5pm</p>
-					<p>Where: Jeter Mountain Farm - 1126 Jeter Mountain Rd, Hendersonville, NC 28739</p>
-					<p>More to come as things finalize:</p>
-					<ul style="list-style-type: none">
-						<li>RSVP Section</li>
-						<li>Dinner Menu</li>
-						<li>Youngen activity information</li>
+					<p>When: Saturday September 4th, 2021</p>
+					<ul style="list-style-type: none;">
+						<li>Ceremony begins at 5p</li>
+						<li>Cocktail hour</li>
+						<li>Reception 630p - 930p</li>
 					</ul>
-
+					<p>Where: Jeter Mountain Farm - 1126 Jeter Mountain Rd, Hendersonville, NC 28739</p>
+					<p>Buffet Menu:</p>
+					<ul style="list-style-type: none">
+						<li>Parmesan Crusted Chicken</li>
+						<li>Pulled Pork</li>
+						<li>Egg Plant Parm</li>
+						<li>Mac & Cheese</li>
+						<li>Tossed Salad</li>
+						<li>Mashed Potatoes</li>
+					</ul>
+					<p>There will be a fire pit with a S'Mores station</p>
+					<p>Re-live the engagement by doing a scavanger hunt</p>
+					<p>There will be corn hole and ladder ball games, as well as colouring books for young ones</p>
 
 				</div>
 			</div>
@@ -616,7 +627,7 @@
 	<!-- ========== End Of Quote ========== -->
 
 	<!-- ========== Hotels ========== -->
-	<div id="hotel" style="padding-top: 3rem;">
+	<!-- <div id="hotel" style="padding-top: 3rem;">
 		<div class="heading">
 			<h1>Places To Stay</h1>
 			<hr>
@@ -757,15 +768,15 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- ========== End Of Hotels ========== -->
 
 	<!-- ========== Quote ========== -->
-	<div id="quote" class="text-center" data-stellar-background-ratio="0.15"></div>
+	<!-- <div id="quote" class="text-center" data-stellar-background-ratio="0.15"></div> -->
 	<!-- ========== End Of Quote ========== -->
 
 	<!-- ========== Photos ========== -->
-	<div id="photos" style="padding-top: 3rem;">
+	<!-- <div id="photos" style="padding-top: 3rem;">
 		<div class="heading">
 			<h1>Engagement Photos</h1>
 			<hr>
@@ -775,103 +786,45 @@
 			</div>
 			<div id="engPhotoPagination" class="pagination row text-center">
 			</div>
+		</div> -->
+	<!-- ========== End Of Photos ========== -->
+
+	<!-- ========== Quote ========== -->
+	<!-- <div id="quote" class="text-center" data-stellar-background-ratio="0.15"></div> -->
+	<!-- ========== End Of Quote ========== -->
+
+	<!-- ========== Photos ========== -->
+	<div id="photosw" style="padding-top: 3rem;">
+		<div class="heading">
+			<h1>Share Your Wedding Day Photos</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="row">
+							<input class="form-control" type="file" id="files" multiple />
+						</div>
+						<div class="row">
+							<p id="uploading"></p>
+							<div class="progress" id="progressHolder" style="display: none;">
+								<div id="progress" class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+							  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+		</div>
+		<div class="container">
+			<div id="img-areaw" class="row">
+			</div>
+			<div id="wedPhotoPagination" class="pagination row text-center">
+			</div>
 		</div>
 		<!-- ========== End Of Photos ========== -->
 
 		<!-- ========== Quote ========== -->
 		<div id="quote" class="text-center" data-stellar-background-ratio="0.15"></div>
 		<!-- ========== End Of Quote ========== -->
-
-
-		<!-- ========== RSVP ========== -->
-		<div id="rsvp" style="padding-top: 3rem;">
-			<div class="heading">
-				<h1>RSVP</h1>
-				<hr>
-			</div>
-			<div class="container">
-				<form id="form" method="post">
-					<label for="ReponseType">New RSVP or Updating RSVP? </label>
-					<select class="form-control contact-text mb-10" name="ReponseType" id="ReponseType">
-						<option value="New">New</option>
-						<option value="Update">Update</option>
-					</select>
-					<br>
-					<select class="form-control contact-text mb-10" name="Reponse" id="Reponse">
-						<option value="New">Will be there!</option>
-						<option value="Update">Cannot make it.</option>
-					</select>
-					<br>
-					<input type="text" id="name" name="name" size="40" class="contact-text mb-10"
-						placeholder="Your Name" required>
-					<br>
-					<input type="email" id="email" name="email" size="40" class="contact-text mt-20 mb-10"
-						placeholder="Your email address" required>
-					<br>
-					<input type="text" id="phone" name="Phone" size="40" class="contact-text mt-20 mb-10"
-						placeholder="Phone">
-
-					<br>
-					<label for="message">Please List Full Name of Those Coming <br> Vegan/Vegetarian preference
-						and/or Food Allergy information for each</label>
-					<textarea id="message" name="message" cols="40" rows="10" class="contact-message mt-10 mb-10"
-						placeholder="Message" required></textarea>
-					<br>
-					<ul id="errors" class="errorMessages"></ul>
-
-					<input id="sendBtn" class="send-btn" type="button" value="Send Email" onclick="sendEmail()" />
-					<br>
-				</form>
-			</div>
-			<!-- ========== End Of Photos ========== -->
-
-			<!-- ========== Quote ========== -->
-			<div id="quote" class="text-center" data-stellar-background-ratio="0.15"></div>
-			<!-- ========== End Of Quote ========== -->
-
-			<!-- ========== Contact ========== -->
-			<div id="contact">
-				<div class="heading">
-					<h1>Contact Us</h1>
-					<hr>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<ul class="list-icon-items clearfix no-margins" style="list-style-type: none;">
-								<li class="grid-3 secondary alpha" style="margin: 0 20%; float: left;">
-									<a href="mailto:AlyssaRobert10.2021@gmail.com">
-										<i class="circ large tertiary ss-icon ss-standard">
-											✉
-											<i class="circ pulse"></i>
-										</i>
-										<h4 class="secondary">Email</h4>
-										<p>
-											<span class="pseudo-link">AlyssaRobert10.2021@gmail.com</span>
-										</p>
-									</a>
-
-								</li>
-								<li class="grid-3 secondary">
-									<i class="circ large tertiary ss-icon ss-standard">
-										📱
-										<i class="circ pulse"></i>
-									</i>
-									<h4 class="secondary">Phone</h4>
-									<p class="secondary">Don't call me</p>
-								</li>
-							</ul>
-
-
-						</div>
-						<!-- <div class="col-xs-12 col-sm-6 col-md-6"> 
-					<div id="map"></div> -->
-
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ========== End of Contact ========== -->
 
 		<!-- ========== Scroll to Top ========== -->
 		<div id="scroll-up">
@@ -973,8 +926,11 @@
 				$('body').css('position', 'fixed');
 				$('body').css('height', '100vh');
 				$('body').css('width', '100vw');
-
-
+			}
+			function openModal2() {
+				document.getElementById("myModal").style.display = "flex";
+				document.getElementById("nav").style.display = "none";
+				document.getElementById("scroll-up").style.display = "none";
 			}
 
 			function closeModal() {
@@ -1105,7 +1061,7 @@
 						}
 
 					);
-				}else{
+				} else {
 					document.getElementById("sendBtn").value = "Not Sent - Try Again"
 				}
 			}
@@ -1163,6 +1119,10 @@
 			firebase.initializeApp(firebaseConfig);
 		</script>
 		<script src="js/photoStorage.js"></script>
+		<script src="js/photoStorage_weddingDat.js"></script>
+		<script src="js/photoUpload.js"></script>
+
+
 
 </body>
 <!-- ========== End of Body ========== -->

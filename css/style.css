@@ -325,10 +325,8 @@ p {
 }
 
 #about .about_bg p {
-  padding-top: 15px;
   font-size: 16px;
   text-align: left;
-  line-height: 28px;
 }
 
 #about .download-resume {
